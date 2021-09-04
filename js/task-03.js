@@ -20,15 +20,15 @@ imageList.style.display = 'flex';
 imageList.style.flexDirection = 'column';
 imageList.style.alignItems = 'center';
 
-// const galleryElements = images.map(({ url, alt }) => {
+// const imageElements = images.map(({ url, alt }) => {
 //   return `<li><img href='${url}' alt='${alt}'>/li>`;
 // });
 
-const setAttributes = ({ url, alt }) => {
-  return `<li><img src="${url}" alt='${alt}' width="450"></li>`;
+const setMarkUp = ({ url, alt }) => {
+  return `<li><img src="${url}" alt='${alt}' width="500"></li>`;
 };
 
-const galleryElements = images.map(setAttributes);
-console.log(galleryElements);
+const imageElements = images.map(setMarkUp);
+// console.log(imageElements);
 
-imageList.insertAdjacentHTML('beforeend', galleryElements.join(''));
+imageList.insertAdjacentHTML('beforeend', imageElements.join(''));

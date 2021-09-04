@@ -4,9 +4,9 @@ console.log(`В списке ${categories.length} категории.`);
 
 categories.forEach(topic =>
   console.log(
-    `Категория: ${topic.querySelector('h2').textContent}, Количество элементов: ${
-      topic.querySelectorAll('li').length
-    }`,
+    `Категория: ${
+      topic.querySelector('h2').textContent
+    }, Количество элементов: ${topic.querySelectorAll('li').length}`,
   ),
 );
 

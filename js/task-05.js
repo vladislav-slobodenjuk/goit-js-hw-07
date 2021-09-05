@@ -7,7 +7,7 @@ function onInputChange(event) {
   // console.log(event.currentTarget.value);
 
   if (nameInput.value !== '') {
-    nameOutput.textContent = event.currentTarget.value;
+    nameOutput.textContent = event.currentTarget.value; // nameInput.value и event.currentTarget.value равны друг другу
     return;
   }
   nameOutput.textContent = 'незнакомец';

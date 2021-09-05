@@ -21,7 +21,7 @@ imageList.style.flexDirection = 'column';
 imageList.style.alignItems = 'center';
 
 // const imageElements = images.map(({ url, alt }) => {
-//   return `<li><img href='${url}' alt='${alt}'>/li>`;
+//   return `<li><img src='${url}' alt='${alt}'></li>`;
 // });
 
 const setMarkUp = ({ url, alt }) => {

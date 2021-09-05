@@ -5,7 +5,8 @@ nameInput.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
   // console.log(event.currentTarget.value);
-  if (event.currentTarget.value) {
+
+  if (nameInput.value !== '') {
     nameOutput.textContent = event.currentTarget.value;
     return;
   }

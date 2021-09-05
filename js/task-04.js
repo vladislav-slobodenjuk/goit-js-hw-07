@@ -10,7 +10,7 @@ const decrease = () => {
     value.textContent = counterValue -= 1;
   }
 };
-
+``;
 const increase = () => {
   value.textContent = counterValue += 1;
 };

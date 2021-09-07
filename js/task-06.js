@@ -1,5 +1,7 @@
 const input = document.getElementById('validation-input');
 const length = input.getAttribute('data-length');
+const valid = 'valid';
+const invalid = 'invalid';
 
 // console.log(length);
 
@@ -11,11 +13,14 @@ function onInputBlur(event) {
 
   if (input.value.length == length) {
     // console.log('верно 6');
-    input.classList.remove('invalid');
-    input.classList.add('valid');
+    changeClass(valid, invalid);
     return;
   }
   // console.log('не верно, не 6');
-  input.classList.remove('valid');
-  input.classList.add('invalid');
+  changeClass(invalid, valid);
+}
+
+function changeClass(add, remove) {
+  input.classList.add(add);
+  input.classList.remove(remove);
 }
